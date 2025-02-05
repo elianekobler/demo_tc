@@ -6,13 +6,14 @@ Note that while here only hazard data is shown (i.e. TC tracks), the functionali
 Furthermore, in this demonstrator only one figure is shown per selected event. This can easily be extended to show multiple figures for the selected event (e.g. hazard, and estimated impact)
 
 An example for a sandbox-type website with a large number of plots for each event is the Swiss Hail Insights website developed within the [scClim project ](https://scclim.ethz.ch/).
-This website is password protected, but access requests can be sent to [Valentin Gebhart](mailto:valentin.gebhart@usys.ethz.ch) or [Timo Schmid](mailto:timo.schmid@usys.ethz.ch)
+This website is password protected, and access requests can be sent to [Valentin Gebhart](mailto:valentin.gebhart@usys.ethz.ch) or [Timo Schmid](mailto:timo.schmid@usys.ethz.ch)
 
 
 ### Functionality
 The basic functionality is a .html webpage ([index.html]((./index.html))) showing a Figure, which is can be changed by selecting different dates.
 The functions which change the image files depending on the selected date are stored in [functions.js](./functions.js).
-Lastly, the scripts to generate the TC-track images are in the [code](./code/)-folder.
+Furthermore, the scripts to generate the TC-track images are in the [code](./code/)-folder.
+Lastly the shell script [run_track_forecasts.sh](./run_track_forecast.sh) runs the python scripts, can be automatically run every day (or more frequent) on any linux server with a crontab command (see e.g. [here](https://www.geeksforgeeks.org/crontab-in-linux-with-examples/) for details )
 
 
 ### Contributors
