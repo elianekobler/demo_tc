@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Webpage metadata -->
+<head>
+	<title>Demo TC</title>
+	<meta name="description" content="Demo TC Forecast">
+	<meta name="keywords" content="Demo TC, Forecast">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- Webpage body-->
+<body>
+
+    <!-- Title and intro text -->
+    <div id="header">
+        <p> This webpage demonstrates a simple showcase of model results.
+            This service is under continuous development for research demonstration purposes only and is not ready for publication or public/commercial use.
+            The content provided carries no warranties of any kind. Please note reduced functionality on browsers other than Firefox and Chromium.
+        </p>
+        <h1> Demo TC </h1>
+    </div>
+
+
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'tc_forecast')">Forecasted Tropical Cyclone Tracks</button>
+        <button class="tablinks" onclick="openTab(event, 'method')">Data and Methods</button> 
+    </div>
+
+    <!-- Tab tc track overview -->
+<div id="tc_forecast" class="tabcontent active" style="display:block">
+    <div id="user_advice"> 
+        <p>Select date</p>
+        <p1>The products displayed here are available from Fri Dec 6 2024 - <span id="date_display"></span>,<br>
+            with new products available daily from around 3 p.m.</p1> 
+        <br>
+    </div>
+
+    <!-- Date selection-->
+    <div id="date_buttons" class="date-control-buttons" style="clear: both;">
+        <button class="date_button" id="btn_before">Previous day</button>
+        <input id="inp_sel_date" type="date">
+        <button class="date_button" id="btn_after">Next day</button>
+    </div>
+
+    <div id="subtitle">
+        <p>Global TC Activity Overview</p>
+    </div>
+
+        <!-- Plot Area-->
+    <div id="plot_area"></div>
+</div>
+
+    <!-- Tab Data and Methods -->
+<div id="method" class="tabcontent" style="display:none;">
+    <h4>Showing Tropical Cyclone Tracks Forecast</h4>
+    <ul> 
+    <li>The tropical cyclone tracks forecast is retrieved from the European Centre for Medium-Range Weather Forecasts (ECMWF). <a href="https://www.ecmwf.int/en/forecasts/charts">Click here</a> to see the latest tropical cyclone activity.</li>
+    <li>Calculations have been done with the risk platform <a href=https://wcr.ethz.ch/research/climada.html>CLIMADA</a>.</li>
+</div>
+
+
+
+    <!-- Webpage Functionalities -->
+    <script type="text/javascript" src="functions.js"></script>
+
+</body>
+</html>

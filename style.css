@@ -1,0 +1,167 @@
+@charset "utf-8";
+body {
+   margin: 0;
+   padding: 0;
+   color: #292929;
+   font: 90% Roboto, Arial, sans-serif;
+   font-weight: 300;
+}
+
+p {
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+}
+
+ul li {
+   padding-right: 10px;
+   line-height: 1.5;
+}
+
+h2 {
+   padding-left: 0px;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   margin: 0;
+   font-size: 15px;
+}
+
+div#date_buttons {
+   padding-left: 10px;
+}
+
+div#header h1 {
+   height: 80px;
+   line-height: 50px;
+   margin: 0;
+   padding-left: 10px;
+   padding-bottom: 0px;
+   color: #fbfafa;
+   background: #737273;
+   text-align: center;
+}
+
+div#header p {
+   background: #737273;
+   color: #c4c3c3;
+   margin: 0;
+   padding-bottom: 7px;
+   padding-top: 7px;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-size: 12px; 
+   text-align: center;  
+}
+
+div#user_advice p {
+   font-size: 16px;
+   font-weight: bold;
+   margin-bottom: 0px;
+}
+
+div#user_advice p1 {
+   font-size: 12px;
+}
+
+#subtitle {
+   display: flex;
+   width: 100%;
+   background-color: #f1f1f1;
+   margin-bottom: 10px;
+ }
+ 
+ #subtitle p {
+   flex: 1;
+   text-align: center;
+   padding: 8px;
+   margin: 0;
+   font-size: 14px;
+   font-weight: bold;
+ }
+
+/* Basic styling for tabs */
+.tab {
+   display: flex;
+}
+
+.tablinks {
+   padding: 10px;
+   background-color: #f1f1f1;
+   border: none;
+   cursor: pointer;
+   flex: 1;
+   text-align: center;
+   font-weight: bold;
+}
+.tab button:hover {
+   background-color: #ccc;
+}
+
+.tablinks.active {
+   background-color: #ccc;
+}
+
+.tabcontent {
+   display: none;
+   padding: 20px;
+}
+
+/* Style the tab buttons at the top (Forecasted River Flood Estimates/ Data and Methods)*/
+.tab button {
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+   font-size: 18px;
+ }
+
+ /* Container for buttons */
+.button-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+ }
+ 
+ /* Date buttons container */
+ .date-control-buttons {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+
+
+/* Common styles for buttons and date input */
+.date_button, #inp_sel_date{
+   border: none;
+   outline: none;
+   padding: 0px 10px;
+   background-color: #f1f1f1;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   height: 30px; 
+   box-sizing: border-box; 
+   font-size: 14px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+/* Specific styles for buttons */
+.date-btn{
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+#inp_sel_date{
+   background-color: #ddd;
+ }
+ /* Button hover effect */
+.date_button:hover{
+   background-color: #e0e0e0;
+ }
+
+
+
+
