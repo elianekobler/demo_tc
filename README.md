@@ -10,11 +10,11 @@ This website is password protected, and access requests can be sent to [Valentin
 
 
 ### Functionality
-The basic functionality is a .html webpage ([index.html]((./index.html))) showing a Figure, which is can be changed by selecting different dates.
+The basic functionality is a .html webpage ([index.html]((./index.html))) showing a Figure, which can be changed by selecting different dates.
 The functions which change the image files depending on the selected date are stored in [functions.js](./functions.js).
 Furthermore, the scripts to generate the TC-track images are in the [code](./code/)-folder.
-Lastly the shell script [run_track_forecasts.sh](./run_track_forecast.sh) runs the python scripts, can be automatically run every day (or more frequent) on any linux server with a crontab command (see e.g. [here](https://www.geeksforgeeks.org/crontab-in-linux-with-examples/) for details )
+Lastly, the shell script [run_track_forecasts.sh](./run_track_forecast.sh) runs the python scripts and can be automatically run every day (or more frequent) on any linux server with a crontab command (see e.g. [here](https://www.geeksforgeeks.org/crontab-in-linux-with-examples/) for details )
 
 
 ### Contributors
-The code for the website is written by Eliane Kobler, and the code for the tropical cyclone download and figure generation are written by Mannie Kam.
+The code for the website is written by Eliane Kobler, and the codes for the tropical cyclone download and figure generation are written by Mannie Kam.
